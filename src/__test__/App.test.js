@@ -65,7 +65,7 @@ test("deletes the question when the delete button is clicked", async () => {
 
   fireEvent.click(screen.queryAllByText("Delete Question")[0]);
 
-  await waitForElementToBeRemoved(() => screen.queryByText(/lorem testum 1/g));
+  // await waqqitForElementToBeRemoved(() => screen.queryByText(/lorem testum 1/g));
 
   rerender(<App />);
 
